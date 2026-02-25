@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & SMO Meta Tags -->
+    <title>Sivanandh C C | Full-Stack Developer & Designer</title>
+    <meta name="description"
+        content="Official portfolio of Sivanandh C C. Expert Full-Stack Developer & Creative Designer specializing in MERN, LAMP, and Canva Design. Dedicated to royal precision and kindness.">
+    <meta name="keywords"
+        content="Sivanandh CC, Full Stack Developer India, Web Designer, MERN Developer, PHP MySQL Expert, Canva Designer, ESEC Hackfest">
+    <meta name="author" content="Sivanandh C C">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sivanandh.com/">
+    <meta property="og:title" content="Sivanandh C C | Full-Stack Developer & Designer">
+    <meta property="og:description"
+        content="Crafting Royal Digital Experiences with Full-Stack Mastery and Creative Design.">
+    <meta property="og:image" content="profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sivanandh.com/">
+    <meta property="twitter:title" content="Sivanandh C C | Full-Stack Developer & Designer">
+    <meta property="twitter:description"
+        content="Official portfolio of Sivanandh C C. Expert Full-Stack Developer & Creative Designer.">
+    <meta property="twitter:image" content="profile.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23C9A227'>S</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-text">SIVA.</div>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    <div id="canvas-container"></div>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SIVA.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" style="--i:1"><i class="fa-solid fa-house-chimney"></i> Home</a>
+                </li>
+                <li><a href="projects.html" style="--i:2"><i class="fa-solid fa-briefcase"></i> Works</a></li>
+                <li><a href="experience.html" style="--i:3"><i class="fa-solid fa-route"></i> Journey</a></li>
+                <li><a href="linkedin.html" style="--i:4"><i class="fa-brands fa-linkedin-in"></i> Posts</a></li>
+                <li><a href="contact.html" style="--i:5"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <p class="accent-text mb-1"
+                            style="font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;">Full-Stack
+                            Developer | Designer</p>
+                        <h1 class="hero-title" id="hero-heading">
+                            Crafting <br> <span class="accent-text">Royal Digital</span> Experiences
+                        </h1>
+                        <p class="hero-subtitle">
+                            I'm Sivanandh C C, a passionate Full-Stack Developer who loves building high-performance
+                            websites and designing creative posters in Canva. Dedicated to kindness and royal precision.
+                        </p>
+                        <div class="hero-btns" style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2.5rem;">
+                            <a href="projects.html" class="btn-primary">Explore Works</a>
+                            <a href="contact.html" class="btn-secondary">Let's Talk</a>
+                        </div>
+                        <div class="hero-socials">
+                            <a href="https://linkedin.com/in/sivanandhcc" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Sivanandh10" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="mailto:sivanandh10cc@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="profile-img-container">
+                        <img src="profile.png" alt="Sivanandh C C">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Passion & Skills -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="glass" style="padding: 3rem;">
+                        <h2 class="mb-4">Beyond the <span class="accent-text">Code</span></h2>
+                        <p class="mb-4" style="color: var(--text-secondary);">
+                            Web development is my craft, but creativity is my fuel. When I'm not architecting backends
+                            in <strong>PHP/MySQL</strong> or crafting frontends with <strong>React</strong>, you'll find
+                            me designing aesthetic posters in <strong>Canva</strong>.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="mb-2"><i class="fa-solid fa-music accent-text"></i> Vibe to the Music</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">My hobby and constant companion
+                                through every line of code.</p>
+                        </div>
+                        <div>
+                            <h4 class="mb-2"><i class="fa-solid fa-users accent-text"></i> Networking</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary);">Avid participant in Bootcamps &
+                                Tech Meetups across India.</p>
+                        </div>
+                    </div>
+
+                    <div id="skills-grid" class="skills-grid">
+                        <div class="glass" style="padding: 1.5rem; text-align: center;">
+                            <i class="fa-brands fa-html5" style="font-size: 2rem; color: #E34F26;"></i>
+                            <p style="margin-top: 0.5rem; font-weight: 600;">HTML</p>
+                        </div>
+                        <div class="glass" style="padding: 1.5rem; text-align: center;">
+                            <i class="fa-brands fa-css3-alt" style="font-size: 2rem; color: #1572B6;"></i>
+                            <p style="margin-top: 0.5rem; font-weight: 600;">CSS</p>
+                        </div>
+                        <div class="glass" style="padding: 1.5rem; text-align: center;">
+                            <i class="fa-brands fa-js" style="font-size: 2rem; color: #F7DF1E;"></i>
+                            <p style="margin-top: 0.5rem; font-weight: 600;">JS</p>
+                        </div>
+                        <div class="glass" style="padding: 1.5rem; text-align: center;">
+                            <i class="fa-brands fa-php" style="font-size: 2rem; color: #777BB4;"></i>
+                            <p style="margin-top: 0.5rem; font-weight: 600;">PHP</p>
+                        </div>
+                        <div class="glass" style="padding: 1.5rem; text-align: center;">
+                            <i class="fa-solid fa-database" style="font-size: 2rem; color: #00758F;"></i>
+                            <p style="margin-top: 0.5rem; font-weight: 600;">MySQL</p>
+                        </div>
+                        <div class="glass" style="padding: 1.5rem; text-align: center;">
+                            <i class="fa-brands fa-java" style="font-size: 2rem; color: #007396;"></i>
+                            <p style="margin-top: 0.5rem; font-weight: 600;">JAVA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Highlights -->
+        <section class="section-padding" style="background: rgba(var(--accent-color), 0.02);">
+            <div class="container">
+                <div class="bento-grid">
+                    <div class="bento-item glass large">
+                        <div class="bento-icon-wrapper">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span class="accent-text">CURRENT FOCUS</span>
+                        <h3>Full-Stack Mastery</h3>
+                        <p style="margin-top: 1rem; color: var(--text-secondary);">Building scalable web applications
+                            using MERN & LAMP stacks. Creating high-fidelity experiences like my recent Zomato Clone.
+                        </p>
+                        <a href="projects.html" class="mt-4" style="font-weight: 600;">View Portfolio →</a>
+                    </div>
+                    <div class="bento-item glass">
+                        <i class="fa-solid fa-shield-halved accent-text mb-2" style="font-size: 2rem;"></i>
+                        <h4>Cyber Security</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Alumni of IBM Edunet internship. Securing
+                            digital footprints.</p>
+                    </div>
+                    <div class="bento-item glass">
+                        <i class="fa-solid fa-palette accent-text mb-2" style="font-size: 2rem;"></i>
+                        <h4>Designer</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Creative poster design in Canva for events &
+                            brands.</p>
+                    </div>
+                    <div class="bento-item glass wide">
+                        <i class="fa-solid fa-microchip accent-text mb-2" style="font-size: 2rem;"></i>
+                        <h4>Institutional Innovation</h4>
+                        <p style="margin-top: 0.5rem;">Engineering systems for ESEC: Hackfest2k24, Student Portals, and
+                            IoT Solutions.</p>
+                    </div>
+                    <div class="bento-item glass">
+                        <i class="fa-solid fa-users accent-text mb-2" style="font-size: 2rem;"></i>
+                        <h4>Tech Meetups</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Active participant in Bootcamps & Tech Meetups
+                            across India.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section-padding"
+            style="background: rgba(201, 162, 39, 0.05); border-top: 1px solid var(--glass-border);">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: clamp(2.2rem, 7vw, 4rem); margin-bottom: 2rem; line-height: 1.2;">Let's Start A
+                    <br>
+                    <span class="accent-text">New Project</span>
+                </h2>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                    <p
+                        style="display: flex; align-items: center; gap: 0.6rem; font-size: clamp(0.75rem, 3vw, 0.95rem);">
+                        <i class="fa-solid fa-envelope accent-text"></i> sivanandh10cc@gmail.com
+                    </p>
+                    <p
+                        style="display: flex; align-items: center; gap: 0.6rem; font-size: clamp(0.75rem, 3vw, 0.95rem);">
+                        <i class="fa-solid fa-phone accent-text"></i> +91 9342446559
+                    </p>
+                    <p
+                        style="display: flex; align-items: center; gap: 0.6rem; font-size: clamp(0.75rem, 3vw, 0.95rem);">
+                        <i class="fa-solid fa-location-dot accent-text"></i> Madarahalli, India
+                    </p>
+                </div>
+                <a href="contact.html" class="btn-primary">Initiate Discussion</a>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">&copy; 2026 Sivanandh C C. Be Kind. Stay Royal.
+            </p>
+            <div class="social-links" style="display: flex; gap: 2.5rem;">
+                <a href="https://linkedin.com/in/sivanandhcc" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">LinkedIn</a>
+                <a href="https://github.com/Sivanandh10" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">GitHub</a>
+                <a href="mailto:sivanandh10cc@gmail.com" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <!-- JS -->
+    <script src="js/animations.js"></script>
+    <script src="js/background.js"></script>
+</body>
+
+</html>

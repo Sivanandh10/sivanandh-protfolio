@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & SMO Meta Tags -->
+    <title>Works | Sivanandh C C</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23C9A227'>S</text></svg>">
+    <meta name="author" content="Sivanandh C C">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-text">WORKS.</div>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    <div id="canvas-container"></div>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SIVA.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" style="--i:1"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="projects.html" class="active" style="--i:2"><i class="fa-solid fa-briefcase"></i> Works</a>
+                </li>
+                <li><a href="experience.html" style="--i:3"><i class="fa-solid fa-route"></i> Journey</a></li>
+                <li><a href="linkedin.html" style="--i:4"><i class="fa-brands fa-linkedin-in"></i> Posts</a></li>
+                <li><a href="contact.html" style="--i:5"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 150px;">
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <h1 class="hero-title" style="margin-bottom: 4rem;">Innovative <br> <span
+                        class="accent-text">Solutions</span></h1>
+
+                <div class="project-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+
+                    <!-- Project: Background Verification for ESEC -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('oracle cloud infra.png') center/cover; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3);">
+                            </div>
+                            <i class="fa-solid fa-user-check"
+                                style="font-size: 4rem; color: white; position: relative; z-index: 1;"></i>
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Institutional
+                                Security</span>
+                            <h3 style="margin: 1rem 0;">ESEC Verify</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                A background verification product developed for Erode Sengunthar Engineering College to
+                                streamline and secure student/faculty credentials.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">PHP</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">MySQL</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">C-Security</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 1: Helmet Detection -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('helmet-detection.jpeg') center/cover; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2);">
+                            </div>
+                            <i class="fa-solid fa-motorcycle"
+                                style="font-size: 4rem; color: white; position: relative; z-index: 1;"></i>
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">IoT &
+                                Safety</span>
+                            <h3 style="margin: 1rem 0;">Helmet Detection System</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                A smart IoT system that prevents bike ignition unless a helmet is detected, ensuring
+                                rider safety through automated verification.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">IoT</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Sensors</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Hackfest2k24 -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('hackfest.jpeg') center/cover; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4);">
+                            </div>
+                            <i class="fa-solid fa-code-branch"
+                                style="font-size: 4rem; color: white; position: relative; z-index: 1;"></i>
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Event
+                                Management</span>
+                            <h3 style="margin: 1rem 0;">Hackfest2k24 Website</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                Comprehensive digital hub for ESEC College's Hackfest event, streamlining registrations
+                                and live engagement.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Full-Stack</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">UI/UX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Kids-Learning -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('kids-learning.png') center/cover; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3);">
+                            </div>
+                            <i class="fa-solid fa-graduation-cap"
+                                style="font-size: 4rem; color: white; position: relative; z-index: 1;"></i>
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Education</span>
+                            <h3 style="margin: 1rem 0;">Kids Learning Platform</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                Gamified educational streams for kids built during the NASA Space Apps Challenge.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass"
+                                    style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Gamification</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">NASA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: TestFlix -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('testflix.png') center/cover; display: flex; align-items: center; justify-content: center;">
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Media</span>
+                            <h3 style="margin: 1rem 0;">TestFlix</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                A testing-focused video platform mockup exploring complex UI layouts and video streaming
+                                components.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">React</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">UI Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Food Delivery (Zomato Clone) -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: linear-gradient(45deg, #FF3D3D, #000); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-utensils" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">E-Commerce</span>
+                            <h3 style="margin: 1rem 0;">Food Delivery (Zomato Clone)</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                A scalable MERN stack application handling complex ordering flows and real-time state
+                                management.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">MERN</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Redux</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Certification 1: Python -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('diplomo-python.jpeg') center/contain no-repeat; background-color: #000;">
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Certification</span>
+                            <h3 style="margin: 1rem 0;">Diploma in Python</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                Specialized certification in Python development and automation.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Python</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Certification 2: Cisco -->
+                    <article class="glass" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div
+                            style="height: 250px; background: url('cisco data analyst.jpeg') center/contain no-repeat; background-color: #000;">
+                        </div>
+                        <div style="padding: 2.5rem; flex-grow: 1;">
+                            <span class="accent-text"
+                                style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Certification</span>
+                            <h3 style="margin: 1rem 0;">Cisco Data Analyst</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                Certified in data analysis and networking foundations by Cisco.
+                            </p>
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Data
+                                    Analysis</span>
+                                <span class="glass" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">Cisco</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">&copy; 2026 Sivanandh C C. Be Kind. Stay Royal.
+            </p>
+            <div class="social-links" style="display: flex; gap: 2.5rem;">
+                <a href="https://linkedin.com/in/sivanandhcc" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">LinkedIn</a>
+                <a href="https://github.com/Sivanandh10" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">GitHub</a>
+                <a href="mailto:sivanandh10cc@gmail.com" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="js/animations.js"></script>
+    <script src="js/background.js"></script>
+</body>
+
+</html>

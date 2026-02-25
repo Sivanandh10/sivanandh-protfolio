@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & SMO Meta Tags -->
+    <title>Contact | Sivanandh C C</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23C9A227'>S</text></svg>">
+    <meta name="author" content="Sivanandh C C">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Calendly Widget CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-text">CONNECT.</div>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    <div id="canvas-container"></div>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SIVA.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" style="--i:1"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="projects.html" style="--i:2"><i class="fa-solid fa-briefcase"></i> Works</a></li>
+                <li><a href="experience.html" style="--i:3"><i class="fa-solid fa-route"></i> Journey</a></li>
+                <li><a href="linkedin.html" style="--i:4"><i class="fa-brands fa-linkedin-in"></i> Posts</a></li>
+                <li><a href="contact.html" class="active" style="--i:5"><i class="fa-solid fa-envelope"></i> Contact</a>
+                </li>
+
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 150px;">
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="container">
+                <div class="contact-layout">
+
+                    <!-- Left: Info + Map -->
+                    <div>
+                        <h1 class="hero-title" style="margin-bottom: 2rem;">Let's <span
+                                class="accent-text">Connect</span></h1>
+                        <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 1.05rem;">
+                            I'm always open to new projects, technical partnerships, or just a friendly conversation
+                            about web development and posters.
+                        </p>
+
+                        <div class="contact-info" style="display: grid; gap: 1rem; margin-bottom: 2rem;">
+                            <div class="glass"
+                                style="padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-envelope accent-text" style="font-size: 1.2rem; width: 24px;"></i>
+                                <div>
+                                    <h4 class="accent-text"
+                                        style="font-size: 0.8rem; letter-spacing: 0.1em; margin-bottom: 0.2rem;">EMAIL
+                                    </h4>
+                                    <p style="font-size: 0.95rem;">sivanandh10cc@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="glass"
+                                style="padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-phone accent-text" style="font-size: 1.2rem; width: 24px;"></i>
+                                <div>
+                                    <h4 class="accent-text"
+                                        style="font-size: 0.8rem; letter-spacing: 0.1em; margin-bottom: 0.2rem;">PHONE
+                                    </h4>
+                                    <p style="font-size: 0.95rem;">+91 9342446559</p>
+                                </div>
+                            </div>
+                            <div class="glass"
+                                style="padding: 1.2rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-location-dot accent-text"
+                                    style="font-size: 1.2rem; width: 24px;"></i>
+                                <div>
+                                    <h4 class="accent-text"
+                                        style="font-size: 0.8rem; letter-spacing: 0.1em; margin-bottom: 0.2rem;">
+                                        LOCATION</h4>
+                                    <p style="font-size: 0.95rem;">Madarahalli, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps Embed -->
+                        <div class="glass" style="overflow: hidden; border-radius: 16px; height: 240px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.2!2d78.400851!3d12.412982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac01000000001%3A0x000000000000001!2sMadarahalli%2C%20Tamil%20Nadu%20635203!5e0!3m2!1sen!2sin!4v1700000000000"
+                                width="100%" height="240"
+                                style="border: 0; display: block; filter: invert(90%) hue-rotate(180deg);"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Madarahalli location map">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="glass" style="padding: 2.5rem;">
+                        <h2 class="mb-4">Send a <span class="accent-text">Message</span></h2>
+                        <form id="contact-form">
+                            <div class="form-group mb-4">
+                                <input type="text" placeholder="Your Name" required
+                                    style="width: 100%; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary); padding: 1rem; border-radius: 10px; font-family: inherit; font-size: 1rem; outline: none;">
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="email" placeholder="Your Email" required
+                                    style="width: 100%; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary); padding: 1rem; border-radius: 10px; font-family: inherit; font-size: 1rem; outline: none;">
+                            </div>
+                            <div class="form-group mb-4">
+                                <textarea rows="5" placeholder="Project Details" required
+                                    style="width: 100%; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary); padding: 1rem; border-radius: 10px; font-family: inherit; font-size: 1rem; outline: none; resize: none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" style="width: 100%;">
+                                <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i>
+                                Initiate Chat via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ✨ Book a Meeting Section -->
+        <section class="section-padding" style="border-top: 1px solid var(--glass-border);">
+            <div class="container">
+
+                <!-- Header -->
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <p
+                        style="color: var(--accent-color); font-size: 0.85rem; letter-spacing: 0.15em; font-weight: 600; margin-bottom: 0.5rem;">
+                        SCHEDULE A SESSION</p>
+                    <h2 style="font-size: clamp(1.8rem, 5vw, 3rem);">Book a <span class="accent-text">Meeting</span>
+                    </h2>
+                    <p
+                        style="color: var(--text-secondary); margin-top: 1rem; max-width: 520px; margin-left: auto; margin-right: auto; font-size: 1rem;">
+                        Pick a time that works for you. Whether it's for a project, collaboration, or just a chat — I'm
+                        available.
+                    </p>
+                </div>
+
+                <!-- Calendly Inline Widget -->
+                <div class="glass" style="border-radius: 20px; overflow: hidden; padding: 0;">
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/sivanandh10cc/30min?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=c9a227"
+                        style="min-width: 280px; height: 700px;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border);">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">&copy; 2026 Sivanandh C C. Be Kind. Stay Royal.
+            </p>
+            <div class="social-links" style="display: flex; gap: 2.5rem;">
+                <a href="https://linkedin.com/in/sivanandhcc" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">LinkedIn</a>
+                <a href="https://github.com/Sivanandh10" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">GitHub</a>
+                <a href="mailto:sivanandh10cc@gmail.com" class="accent-text"
+                    style="font-weight: 600; font-size: 0.9rem;">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script src="js/animations.js"></script>
+    <script src="js/background.js"></script>
+    <!-- Calendly Widget JS -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+
+</html>
